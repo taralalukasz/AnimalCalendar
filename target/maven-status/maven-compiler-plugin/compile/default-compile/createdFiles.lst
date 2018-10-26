@@ -1,0 +1,6 @@
+org\lukasz\web\HomeController.class
+org\lukasz\config\WebConfig.class
+org\lukasz\config\CalendarInitializer.class
+org\lukasz\config\RootConfig.class
+org\lukasz\model\BasicDateModel.class
+org\lukasz\util\DayManager.class
