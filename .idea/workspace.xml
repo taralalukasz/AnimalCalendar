@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c17d0352-2e11-4e0b-bb3f-51d2f47fb323" name="Default" comment="" />
+    <list default="true" id="c17d0352-2e11-4e0b-bb3f-51d2f47fb323" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lukasz/model/DayFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lukasz/model/Week.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lukasz/util/MonthManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnimalCalendar.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnimalCalendar.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnimalCalendar/WEB-INF/classes/org/lukasz/web/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnimalCalendar/WEB-INF/classes/org/lukasz/web/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AnimalCalendar/WEB-INF/views/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AnimalCalendar/WEB-INF/views/homepage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lukasz/web/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lukasz/web/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +32,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
+            <state relative-caret-position="1054">
               <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
             </state>
           </provider>
@@ -25,11 +41,66 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="45" column="61" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="61" />
+            <state relative-caret-position="731">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonthManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonthManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/lukasz/util/MonthManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Week.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/model/Week.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DayFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/model/DayFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -46,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homepage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1090">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="85">
+              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -67,23 +138,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalendarInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/config/CalendarInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\&lt;\%\@ taglib prefix\=\&quot;c\&quot; uri\=\&quot;http\:\/\/java\.sun\.com\/jsp\/jstl\/core\&quot; \%\&gt;\n\&lt;\%\@ taglib prefix\=\&quot;form\&quot; uri\=\&quot;http\:\/\/www\.springframework\.org\/tags\/form\&quot; \%\&gt;\n\&lt;\!DOCTYPE html \&quot;http\:\/\/www\.thymeleaf\.org\/dtd\/xhtml1\-strict\-thymeleaf\-4\.dtd\&quot;\&gt;\n\n\&lt;html xmlns\=\&quot;http\:\/\/www\.w3\.org\/1999\/xhtml\&quot;\n      xmlns\:jsp\=\&quot;http\:\/\/java\.sun\.com\/JSP\/Page\&quot;\n      xmlns\:c\=\&quot;http\:\/\/java\.sun\.com\/jsp\/jstl\/core\&quot;\&gt;\n\&lt;html\&gt;\n\&lt;title\&gt;Animal Calendar\&lt;\/title\&gt;\n\&lt;meta charset\=\&quot;UTF\-8\&quot;\&gt;\n\&lt;body\&gt;\n\n\&lt;div id\=\&quot;header\&quot;\&gt;\n    \&lt;div id\=\&quot;header_element\&quot;\&gt;\n        \&lt;h1\&gt;ANIMAL CALENDAR LOGO HERE\&lt;\/h1\&gt;\n    \&lt;\/div\&gt;\n\n    \&lt;form\:form name\=\&quot;datePickerForm\&quot; method\=\&quot;get\&quot;\&gt;\n        \&lt;div class\=\&quot;\&quot;\&gt;\n            choose year \: \&lt;input type\=\&quot;text\&quot; value\=\&quot;2018\&quot; name\=\&quot;year\&quot;\/\&gt;\n        \&lt;\/div\&gt;\n        \&lt;div class\=\&quot;\&quot;\&gt;\n            choose month\: \&lt;input type\=\&quot;text\&quot; value\=\&quot;4\&quot; name\=\&quot;month\&quot;\/\&gt;\n        \&lt;\/div\&gt;\n        \&lt;div class\=\&quot;\&quot;\&gt;\n            submit\: \&lt;input type\=\&quot;submit\&quot; value\=\&quot;choose\&quot;\/\&gt;\n        \&lt;\/div\&gt;\n    \&lt;\/form\:form\&gt;\n\&lt;\/div\&gt;\n\nMonth To display\: \&lt;c\:out value\=\&quot;\$\{monthToDisplay\}\&quot;\/\&gt;\&lt;br\&gt;\n\n\n\n\n\n\n\&lt;table\&gt;\n    \&lt;tr\&gt;\n        \&lt;th\&gt;Monday\&lt;\/th\&gt;\n        \&lt;th\&gt;Tuesday\&lt;\/th\&gt;\n        \&lt;th\&gt;Wednesday\&lt;\/th\&gt;\n        \&lt;th\&gt;Thursday\&lt;\/th\&gt;\n        \&lt;th\&gt;Friday\&lt;\/th\&gt;\n        \&lt;th\&gt;Saturday\&lt;\/th\&gt;\n        \&lt;th\&gt;Sunday\&lt;\/th\&gt;\n    \&lt;\/tr\&gt;\n    \&lt;c\:forEach items\=\&quot;\$\{monthToDisplay\}\&quot; var\=\&quot;week\&quot; \&gt;\n        \&lt;tr\&gt;\n            \&lt;c\:out value\=\&quot;\$\{week\}\&quot; \/\&gt;\n        \&lt;\/tr\&gt;\n    \&lt;\/c\:forEach\&gt;\n\&lt;\/table\&gt;\n\&lt;\/body\&gt;\n\&lt;\/html\&gt;</find>
+      <find>da</find>
+      <find>dayNumberInMonth</find>
+      <find>daysLeft</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>DAYS_LEFT</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,8 +175,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/lukasz/util/DayManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/lukasz/model/BasicDateModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/lukasz/model/Frame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/lukasz/model/Week.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/lukasz/web/HomeControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/lukasz/util/MonthManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java" />
       </list>
     </option>
   </component>
@@ -121,7 +201,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -130,11 +210,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,75 +312,37 @@
             <path>
               <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnimalCalendar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalCalendar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalCalendar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lukasz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalCalendar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lukasz" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimalCalendar" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnimalCalendar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-web:5.0.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-web-5.0.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="method" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,9 +354,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.lukasz.util" />
+      <recent name="org.lukasz.web" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -327,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Remote.tomcat debug">
+  <component name="RunManager" selected="JUnit.MonthManagerTest.testMonthRenderCreation">
     <configuration name="DayManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lukasz.util.DayManager" />
       <module name="AnimalCalendar" />
@@ -335,6 +389,75 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AnimalCalendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lukasz.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.lukasz.web" />
+      <option name="MAIN_CLASS_NAME" value="org.lukasz.web.HomeControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HomeControllerTest.testMonthRenderCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AnimalCalendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lukasz.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.lukasz.web" />
+      <option name="MAIN_CLASS_NAME" value="org.lukasz.web.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testMonthRenderCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MonthManagerTest.testMonthRenderCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AnimalCalendar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lukasz.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.lukasz.util" />
+      <option name="MAIN_CLASS_NAME" value="org.lukasz.util.MonthManagerTest" />
+      <option name="METHOD_NAME" value="testMonthRenderCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -352,7 +475,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="tomcat debug" type="Remote" factoryName="Remote">
+    <configuration name="jp2gmd" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
@@ -386,11 +509,17 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Remote.tomcat debug" />
+      <item itemvalue="Remote.jp2gmd" />
       <item itemvalue="Application.DayManager" />
+      <item itemvalue="JUnit.HomeControllerTest.testMonthRenderCreation" />
+      <item itemvalue="JUnit.HomeControllerTest" />
+      <item itemvalue="JUnit.MonthManagerTest.testMonthRenderCreation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MonthManagerTest.testMonthRenderCreation" />
+        <item itemvalue="JUnit.HomeControllerTest.testMonthRenderCreation" />
+        <item itemvalue="JUnit.HomeControllerTest" />
         <item itemvalue="Application.DayManager" />
       </list>
     </recent_temporary>
@@ -414,15 +543,49 @@
       <workItem from="1540229890564" duration="2988000" />
       <workItem from="1540315058287" duration="3499000" />
       <workItem from="1540478995359" duration="4494000" />
-      <workItem from="1540564697338" duration="1045000" />
+      <workItem from="1540564697338" duration="7265000" />
+      <workItem from="1540708933149" duration="9021000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 12m 02s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 13m 38s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 13m 56s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 20m 40s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 20m 58s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 22m 09s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 22m 29s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 22m 48s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 23m 10s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MonthManagerTest_testMonthRenderCreation - 2018.10.28 at 10h 24m 44s.xml">
+      <configuration name="MonthManagerTest.testMonthRenderCreation" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35794000" />
+    <option name="totallyTimeSpent" value="51035000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -434,28 +597,28 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39772728" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.328125" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32905984" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32905984" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.328125" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32905984" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.61079544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32905984" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,25 +632,47 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java</url>
-          <line>25</line>
+          <line>24</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java</url>
-          <line>58</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="weekList.get(4)" />
+        <watch expression="weekList.get(4)" />
+      </configuration>
       <configuration name="Remote">
         <watch expression="&quot;redirect:/home?year=&quot; + dateModel.getYear() + &quot;&amp;month=&quot; + dateModel.getMonth()" language="JAVA" />
       </configuration>
@@ -501,59 +686,20 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>DAYS_LEFT</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>daysLeft == DAYS_LEFT</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/util/DayManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="100" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/model/BasicDateModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/config/RootConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -603,6 +749,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,6 +899,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -771,6 +923,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,6 +995,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -857,17 +1015,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/config/RootConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/lukasz/web/HomeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/lukasz/util/MonthManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -884,20 +1079,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/web/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/model/Week.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="61" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="61" />
+        <state relative-caret-position="136">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/model/DayFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lukasz/util/MonthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/homepage.jsp">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1090">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="147">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

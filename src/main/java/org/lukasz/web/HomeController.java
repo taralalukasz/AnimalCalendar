@@ -2,12 +2,11 @@ package org.lukasz.web;
 
 import org.lukasz.model.BasicDateModel;
 import org.lukasz.util.DayManager;
+import org.lukasz.util.MonthManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -37,22 +36,10 @@ public class HomeController {
         int firstDayOfMonth = DayManager.countFirstDayOfMonth(year, month);
         int numberOfDaysInMonth = DayManager.countDaysInMonth(year, month);
 
-        model.addAttribute("firstDayOfMonth", firstDayOfMonth);
-        model.addAttribute("numberOfDaysInMonth", numberOfDaysInMonth);
+
+        model.addAttribute("monthToDisplay", MonthManager.createMonth(firstDayOfMonth, numberOfDaysInMonth));
 
         return "homepage";
-    }
-
-    @RequestMapping(path="/home", method = RequestMethod.POST)
-    public String processRegistration(
-            @Valid BasicDateModel dateModel,
-            Errors errors) {
-
-        if (errors.hasErrors()) {
-            return redirectToToday();
-        }
-
-        return "redirect:/home?year=" + dateModel.getYear() + "&month=" + dateModel.getMonth();
     }
 
     private String redirectToToday() {
