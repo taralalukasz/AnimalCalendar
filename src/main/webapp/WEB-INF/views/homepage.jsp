@@ -8,7 +8,7 @@
 <html>
 <head>
     <title>Animal Calendar</title>
-    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style.css" />" >
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/main.css" />
 </head>
 
 <meta charset="UTF-8">
@@ -48,11 +48,19 @@
         <tr>
             <c:forEach items="${week.daysInWeek}" var="dayFrame">
                 <td>
-                    <div class="dayFrame">
-                        in week: <c:out value="${dayFrame.dayNumberInWeek}"/>
-                        in month: <c:out value="${dayFrame.dayNumberInMonth}"/>
-                        to be rendered: <c:out value="${dayFrame.toBeRendered}"/>
-                    </div>
+                    <c:choose>
+                        <c:when test="${true eq dayFrame.toBeRendered}" >
+                            <div class="dayFrame">
+                                in week: <c:out value="${dayFrame.dayNumberInWeek}"/>
+                                in month: <c:out value="${dayFrame.dayNumberInMonth}"/>
+                                to be rendered: <c:out value="${dayFrame.toBeRendered}"/>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="dayFrame">
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
                 </td>
             </c:forEach>
         </tr>
