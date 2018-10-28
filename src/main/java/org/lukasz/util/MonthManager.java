@@ -13,6 +13,8 @@ public class MonthManager {
     private static final int TOTAL_DAYS_IN_WEEK = 7;
 
     public static List<Week> createMonth(int firstDayOfMonth, int numberOfDaysInMonth) {
+        validateInputArguments(firstDayOfMonth, numberOfDaysInMonth);
+
         List<Week> weekList = new ArrayList<>();
          DAY_NUMBER_IN_MONTH = 1;
          DAYS_LEFT = numberOfDaysInMonth;
@@ -30,6 +32,15 @@ public class MonthManager {
         return weekList.stream()
                 .filter(week -> week != null)
                 .collect(Collectors.toList());
+    }
+
+    private static void validateInputArguments(int firstDayOfMonth, int numberOfDaysInMonth) {
+        if (firstDayOfMonth < 1
+                || firstDayOfMonth > 8
+                || numberOfDaysInMonth < 1
+                || firstDayOfMonth > 31) {
+            throw new IllegalArgumentException("First day of month or total number of days in month are invalid values.");
+        }
     }
 
     private static Week countFirstWeek(int firstDayOfMonth) {

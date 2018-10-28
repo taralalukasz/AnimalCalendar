@@ -21,33 +21,28 @@ public class HomeController {
             @Valid  @ModelAttribute BasicDateModel basicDateModel,
             BindingResult result,
             Model model) {
-
+        
         if (result.hasErrors()) {
             return redirectToToday();
         }
-
-        Integer year = basicDateModel.getYear();
-        Integer month = basicDateModel.getMonth();
-
-        if (year == null || month == null) {
-            return redirectToToday();
-        }
+        int year = basicDateModel.getYear();
+        int month = basicDateModel.getMonth();
 
         int firstDayOfMonth = DayManager.countFirstDayOfMonth(year, month);
         int numberOfDaysInMonth = DayManager.countDaysInMonth(year, month);
-
 
         model.addAttribute("monthToDisplay", MonthManager.createMonth(firstDayOfMonth, numberOfDaysInMonth));
 
         return "homepage";
     }
 
+
+
     private String redirectToToday() {
         LocalDate date = LocalDate.now();
-        Integer currentMonth = date.getMonth().getValue();
-        Integer currentYear = date.getYear();
+        int currentMonth = date.getMonth().getValue();
+        int currentYear = date.getYear();
 
         return "redirect:/home?year=" + currentYear + "&month=" + currentMonth;
-
     }
 }

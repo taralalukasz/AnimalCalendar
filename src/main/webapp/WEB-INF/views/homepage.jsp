@@ -6,7 +6,11 @@
       xmlns:jsp="http://java.sun.com/JSP/Page"
       xmlns:c="http://java.sun.com/jsp/jstl/core">
 <html>
-<title>Animal Calendar</title>
+<head>
+    <title>Animal Calendar</title>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/style.css" />" >
+</head>
+
 <meta charset="UTF-8">
 <body>
 
@@ -44,9 +48,11 @@
         <tr>
             <c:forEach items="${week.daysInWeek}" var="dayFrame">
                 <td>
-                    in week: <c:out value="${dayFrame.dayNumberInWeek}"/>
-                    in month: <c:out value="${dayFrame.dayNumberInMonth}"/>
-                    to be rendered: <c:out value="${dayFrame.toBeRendered}"/>
+                    <div class="dayFrame">
+                        in week: <c:out value="${dayFrame.dayNumberInWeek}"/>
+                        in month: <c:out value="${dayFrame.dayNumberInMonth}"/>
+                        to be rendered: <c:out value="${dayFrame.toBeRendered}"/>
+                    </div>
                 </td>
             </c:forEach>
         </tr>
