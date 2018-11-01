@@ -21,10 +21,10 @@
     <div class="header_element">
         <form:form name="datePickerForm" method="get">
             <div class="">
-                choose year : <input type="text" value="2018" name="year"/>
+                choose year : <input type="text" value="${param.year}" name="year"/>
             </div>
             <div class="">
-                choose month: <input type="text" value="4" name="month"/>
+                choose month: <input type="text" value="${param.month}" name="month"/>
             </div>
             <div class="">
                 submit: <input type="submit" value="choose"/>

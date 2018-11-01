@@ -5,7 +5,7 @@
 
 #header_logo {
     height: 100%;
-    width: 20%;
+    max-width: 20%;
 }
 
 .header_element{
