@@ -15,21 +15,32 @@
 <body>
 
 <div id="header">
-    <div id="header_element">
+    <div id="header_logo">
         <h1>ANIMAL CALENDAR LOGO HERE</h1>
     </div>
+    <div class="header_element">
+        <form:form name="datePickerForm" method="get">
+            <div class="">
+                choose year : <input type="text" value="2018" name="year"/>
+            </div>
+            <div class="">
+                choose month: <input type="text" value="4" name="month"/>
+            </div>
+            <div class="">
+                submit: <input type="submit" value="choose"/>
+            </div>
+        </form:form>
+    </div>
 
-    <form:form name="datePickerForm" method="get">
-        <div class="">
-            choose year : <input type="text" value="2018" name="year"/>
-        </div>
-        <div class="">
-            choose month: <input type="text" value="4" name="month"/>
-        </div>
-        <div class="">
-            submit: <input type="submit" value="choose"/>
-        </div>
-    </form:form>
+    <%--animal panel --%>
+    <div class="header_element">
+        here animal panel will be placed
+    </div>
+
+    <%--login form--%>
+    <div class="header_element">
+        here login form will be placed
+    </div>
 </div>
 
 
@@ -50,15 +61,15 @@
                 <td>
                     <c:choose>
                         <c:when test="${true eq dayFrame.toBeRendered}" >
-                            <div class="dayFrame">
+                            <div> <%--class="dayFrame">--%>
                                 in week: <c:out value="${dayFrame.dayNumberInWeek}"/>
                                 in month: <c:out value="${dayFrame.dayNumberInMonth}"/>
                                 to be rendered: <c:out value="${dayFrame.toBeRendered}"/>
                             </div>
                         </c:when>
                         <c:otherwise>
-                            <div class="dayFrame">
-                            </div>
+                            <%--<div class="dayFrame">--%>
+                            <%--</div>--%>
                         </c:otherwise>
                     </c:choose>
                 </td>

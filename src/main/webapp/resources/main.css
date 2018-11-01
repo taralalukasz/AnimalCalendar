@@ -1,3 +1,33 @@
+#header {
+    display: flex;
+    height: 150px;
+}
+
+#header_logo {
+    height: 100%;
+    width: 20%;
+}
+
+.header_element{
+    flex: auto;
+    height: 100%;
+}
+
 .dayFrame {
     border : solid 2px black;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border : 1px solid black
+}
+
+th, td {
+    width : 12.5%;
+    height:  100px;
+}
+
