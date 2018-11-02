@@ -34,12 +34,16 @@
 
     <%--animal panel --%>
     <div class="header_element">
-        here animal panel will be placed
+        <c:forEach items="${allAnimals}" var="animal" >
+            <c:out value="${animal.name}"/>
+        </c:forEach>
     </div>
 
     <%--login form--%>
     <div class="header_element">
-        here login form will be placed
+        <button type="button">
+            DODAJ ZWIERZĘ
+        </button>
     </div>
 </div>
 

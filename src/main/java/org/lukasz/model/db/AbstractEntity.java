@@ -8,6 +8,15 @@ public abstract class AbstractEntity implements Serializable {
     protected Date createdAt;
     protected Date modifiedAt;
 
+    //TODO NEED TO ADD LEGIT CONSTRUCTOR
+
+
+    public AbstractEntity(Long id) {
+        this.id = id;
+        this.createdAt = new Date();
+        this.modifiedAt = new Date();
+    }
+
     public Long getId() {
         return id;
     }
@@ -18,10 +27,6 @@ public abstract class AbstractEntity implements Serializable {
 
     public Date getCreatedAt() {
         return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
     }
 
     public Date getModifiedAt() {

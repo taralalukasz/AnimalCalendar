@@ -11,6 +11,13 @@ public class Event extends AbstractEntity {
     private Date startDate;
     private Date endDate;
 
+    public Event(Long id, String title, Date startDate, Date endDate) {
+        super(id);
+        Title = title;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
     public String getTitle() {
         return Title;
     }

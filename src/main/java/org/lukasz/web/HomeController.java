@@ -1,8 +1,10 @@
 package org.lukasz.web;
 
 import org.lukasz.model.BasicDateModel;
+import org.lukasz.repository.AbstractRepo;
 import org.lukasz.util.DayManager;
 import org.lukasz.util.MonthManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -15,6 +17,9 @@ import java.time.LocalDate;
 
 @Controller
 public class HomeController {
+
+    @Autowired
+    AbstractRepo animalRepo;
 
     @RequestMapping(path = "/home", method = RequestMethod.GET)
     public String homepage(
@@ -32,11 +37,10 @@ public class HomeController {
         int numberOfDaysInMonth = DayManager.countDaysInMonth(year, month);
 
         model.addAttribute("monthToDisplay", MonthManager.createMonth(firstDayOfMonth, numberOfDaysInMonth));
+        model.addAttribute("allAnimals", animalRepo.findAll());
 
         return "homepage";
     }
-
-
 
     private String redirectToToday() {
         LocalDate date = LocalDate.now();
