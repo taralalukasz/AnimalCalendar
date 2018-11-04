@@ -39,11 +39,15 @@
         </c:forEach>
     </div>
 
-    <%--login form--%>
+    <%--animal form--%>
     <div class="header_element">
-        <button type="button">
-            DODAJ ZWIERZĘ
-        </button>
+        <button class="trigger">Add Animal</button>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h1>Add new animal</h1>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -81,5 +85,26 @@
         </tr>
     </c:forEach>
 </table>
+
+<script>
+    var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+
+</script>
 </body>
 </html>
