@@ -8,6 +8,7 @@
 <html>
 <head>
     <title>Animal Calendar</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/main.css" />
 </head>
 
@@ -46,6 +47,16 @@
             <div class="modal-content">
                 <span class="close-button">&times;</span>
                 <h1>Add new animal</h1>
+
+                <c:url value="/add" var="addFormUrl"/>
+                <form:form name="animalForm" action="${addFormUrl}" method="POST" modelAttribute="newAnimal" onsubmit="return validateForm()">
+                    <form:label path="name">Name</form:label>
+                    <form:input path="name"/>
+
+                    <input type="submit" value="submit"/>
+                </form:form>
+
+                <p id="animal_form_message">Name cannot be empty!</p>
             </div>
         </div>
     </div>
@@ -93,6 +104,7 @@
 
     function toggleModal() {
         modal.classList.toggle("show-modal");
+        document.getElementById("animal_form_message").style.display="none";
     }
 
     function windowOnClick(event) {
@@ -104,6 +116,14 @@
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
+
+    function validateForm() {
+        var x = document.forms["animalForm"]["name"].value;
+        if (x == "") {
+            document.getElementById("animal_form_message").style.display="block";
+            return false;
+        }
+    }
 
 </script>
 </body>

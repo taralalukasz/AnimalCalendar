@@ -8,6 +8,11 @@
     max-width: 20%;
 }
 
+#animal_form_message {
+    display: none;
+}
+
+
 .header_element{
     flex: auto;
     height: 100%;
@@ -30,8 +35,6 @@ th, td {
     width : 12.5%;
     height:  100px;
 }
-
-
 
 .modal {
     position: fixed;

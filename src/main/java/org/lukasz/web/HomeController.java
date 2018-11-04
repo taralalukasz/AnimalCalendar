@@ -1,6 +1,7 @@
 package org.lukasz.web;
 
 import org.lukasz.model.BasicDateModel;
+import org.lukasz.model.db.Animal;
 import org.lukasz.repository.AnimalRepo;
 import org.lukasz.repository.BaseRepo;
 import org.lukasz.util.DayManager;
@@ -38,7 +39,8 @@ public class HomeController {
 
         model.addAttribute("monthToDisplay", MonthManager.createMonth(firstDayOfMonth, numberOfDaysInMonth));
         model.addAttribute("allAnimals", animalRepo.findAllAnimals());
-
+        //this model is used in new animal form
+        model.addAttribute("newAnimal", new Animal());
         return "homepage";
     }
 

@@ -1,11 +1,10 @@
 package org.lukasz.model.db;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 public class Animal extends AbstractEntity {
-
-    //TODO NEED TO THINK ABOUT LEGIT CONTRUCTOR (THINK ABOUT ABSTRACTENTITY AS WELL)
-
+    @NotNull
     private String name;
     private List<AbstractEntity> eventList;
 
@@ -17,6 +16,10 @@ public class Animal extends AbstractEntity {
     public Animal(String name) {
         super();
         this.name = name;
+    }
+
+    public Animal() {
+        super();
     }
 
     public String getName() {
