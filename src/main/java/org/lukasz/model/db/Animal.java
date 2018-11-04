@@ -14,6 +14,11 @@ public class Animal extends AbstractEntity {
         this.name = name;
     }
 
+    public Animal(String name) {
+        super();
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

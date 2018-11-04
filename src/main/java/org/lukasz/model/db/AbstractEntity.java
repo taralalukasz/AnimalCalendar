@@ -17,6 +17,10 @@ public abstract class AbstractEntity implements Serializable {
         this.modifiedAt = new Date();
     }
 
+    public AbstractEntity() {
+
+    }
+
     public Long getId() {
         return id;
     }

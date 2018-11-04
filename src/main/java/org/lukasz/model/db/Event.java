@@ -18,6 +18,13 @@ public class Event extends AbstractEntity {
         this.endDate = endDate;
     }
 
+    public Event( String title, Date startDate, Date endDate) {
+        super();
+        Title = title;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
     public String getTitle() {
         return Title;
     }
