@@ -1,6 +1,6 @@
 #header {
     display: flex;
-    height: 150px;
+    height: 250px;
 }
 
 #header_logo {
@@ -75,4 +75,18 @@ th, td {
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.top_to_bottom {
+    width: 0;
+    word-wrap: break-word;
+}
+
+.flex_container {
+    display: flex;
+}
+
+.animal_tab {
+    width: 30px;
+    height: 100%;
 }

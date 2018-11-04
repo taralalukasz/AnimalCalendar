@@ -34,9 +34,13 @@
     </div>
 
     <%--animal panel --%>
-    <div class="header_element">
+    <div class="header_element flex_container">
         <c:forEach items="${allAnimals}" var="animal" >
-            <c:out value="${animal.name}"/>
+            <div class="animal_tab">
+                <div class="top_to_bottom">
+                    <c:out value="${animal.name}"/>
+                </div>
+            </div>
         </c:forEach>
     </div>
 
@@ -56,7 +60,7 @@
                     <input type="submit" value="submit"/>
                 </form:form>
 
-                <p id="animal_form_message">Name cannot be empty!</p>
+                <p id="animal_form_message">Name must be between 1 and 12 characters long!</p>
             </div>
         </div>
     </div>
@@ -120,6 +124,10 @@
     function validateForm() {
         var x = document.forms["animalForm"]["name"].value;
         if (x == "") {
+            document.getElementById("animal_form_message").style.display="block";
+            return false;
+        }
+        if (x.length > 12) {
             document.getElementById("animal_form_message").style.display="block";
             return false;
         }
