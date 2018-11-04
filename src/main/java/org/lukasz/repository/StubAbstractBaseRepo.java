@@ -1,14 +1,11 @@
 package org.lukasz.repository;
 
 import org.lukasz.model.db.AbstractEntity;
-import org.lukasz.model.db.Animal;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public abstract class StubAbstractRepo<T extends AbstractEntity> implements AbstractRepo <T>{
+public abstract class StubAbstractBaseRepo<T extends AbstractEntity> implements BaseRepo<T> {
 
     protected Map<Long, T> records = new HashMap<>();
 
@@ -33,10 +30,5 @@ public abstract class StubAbstractRepo<T extends AbstractEntity> implements Abst
     @Override
     public T findById(Long id) {
         return records.get(id);
-    }
-
-    @Override
-    public List<T> findAll() {
-        return new ArrayList<>(records.values());
     }
 }

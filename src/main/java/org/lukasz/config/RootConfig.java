@@ -1,7 +1,8 @@
 package org.lukasz.config;
 
 import org.lukasz.model.db.Animal;
-import org.lukasz.repository.AbstractRepo;
+import org.lukasz.repository.AnimalRepo;
+import org.lukasz.repository.BaseRepo;
 import org.lukasz.repository.StubAnimalRepo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,8 +17,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
         })
 public class RootConfig {
         @Bean
-        public AbstractRepo<Animal> animalRepo() {
-                AbstractRepo<Animal> animalRepo = new StubAnimalRepo();
+        public AnimalRepo animalRepo() {
+                AnimalRepo animalRepo = new StubAnimalRepo();
                 animalRepo.save(new Animal(new Long(1), "Opiekacz"));
                 return animalRepo;
         }

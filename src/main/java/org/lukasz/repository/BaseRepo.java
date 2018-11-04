@@ -1,11 +1,10 @@
 package org.lukasz.repository;
 
-import java.util.List;
+import org.lukasz.model.db.AbstractEntity;
 
-public interface AbstractRepo <T> {
+public interface BaseRepo<T extends AbstractEntity> {
     void save(T entity);
     void delete(T entity);
     void deleteById(Long id);
     T findById(Long id);
-    List<T> findAll();
 }
