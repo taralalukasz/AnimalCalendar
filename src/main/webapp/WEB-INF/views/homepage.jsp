@@ -109,37 +109,8 @@
     </c:forEach>
 </table>
 
-<script>
-    var modal = document.querySelector(".modal");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
 
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-        document.getElementById("animal_form_message").style.display="none";
-    }
-
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-
-    function validateForm() {
-        var x = document.forms["animalForm"]["name"].value;
-        if (x == "") {
-            document.getElementById("animal_form_message").style.display="block";
-            return false;
-        }
-        if (x.length > 12) {
-            document.getElementById("animal_form_message").style.display="block";
-            return false;
-        }
-    }
-</script>
+<script src=${pageContext.request.contextPath}/resources/scripts/modal.js></script>
+<script src=${pageContext.request.contextPath}/resources/scripts/validateAnimalForm.js></script>
 </body>
 </html>

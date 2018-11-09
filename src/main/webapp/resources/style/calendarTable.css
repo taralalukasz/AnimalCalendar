@@ -1,0 +1,18 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border : 1px solid black
+}
+
+th, td {
+    width : 12.5%;
+    height:  100px;
+}
+
+.dayFrame {
+    border : solid 2px black;
+}
