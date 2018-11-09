@@ -41,6 +41,8 @@
                     <c:out value="${animal.name}"/>
                 </div>
             </div>
+
+            <button class="event_form">+</button>
         </c:forEach>
     </div>
 
@@ -85,9 +87,15 @@
                     <c:choose>
                         <c:when test="${true eq dayFrame.toBeRendered}" >
                             <div> <%--class="dayFrame">--%>
-                                in week: <c:out value="${dayFrame.dayNumberInWeek}"/>
+                                <%--in week: <c:out value="${dayFrame.dayNumberInWeek}"/>--%>
                                 in month: <c:out value="${dayFrame.dayNumberInMonth}"/>
-                                to be rendered: <c:out value="${dayFrame.toBeRendered}"/>
+                                <%--to be rendered: <c:out value="${dayFrame.toBeRendered}"/>--%>
+
+                                <c:forEach items="${allEvents}" var="event">
+                                    <c:if test="${event.eventDate.dayOfMonth eq dayFrame.dayNumberInMonth}" >
+                                        DAY OF EVENT : <c:out value="${event.eventDate.dayOfMonth}" />
+                                    </c:if>
+                                </c:forEach>
                             </div>
                         </c:when>
                         <c:otherwise>
@@ -132,7 +140,6 @@
             return false;
         }
     }
-
 </script>
 </body>
 </html>

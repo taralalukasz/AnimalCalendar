@@ -1,6 +1,6 @@
 package org.lukasz.model.db;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * Basic event to be displayed
@@ -8,21 +8,18 @@ import java.util.Date;
 public class Event extends AbstractEntity {
     private String Title;
     private String Description;
-    private Date startDate;
-    private Date endDate;
+    private LocalDateTime eventDate;
 
-    public Event(Long id, String title, Date startDate, Date endDate) {
+    public Event(Long id, String title, LocalDateTime eventDate) {
         super(id);
         Title = title;
-        this.startDate = startDate;
-        this.endDate = endDate;
+        this.eventDate = eventDate;
     }
 
-    public Event( String title, Date startDate, Date endDate) {
+    public Event( String title, LocalDateTime eventDate) {
         super();
         Title = title;
-        this.startDate = startDate;
-        this.endDate = endDate;
+        this.eventDate = eventDate;
     }
 
     public String getTitle() {
@@ -41,19 +38,12 @@ public class Event extends AbstractEntity {
         Description = description;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public LocalDateTime getEventDate() {
+        return eventDate;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setEventDate(LocalDateTime eventDate) {
+        this.eventDate = eventDate;
     }
 
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
 }

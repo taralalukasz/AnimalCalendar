@@ -2,6 +2,7 @@ package org.lukasz.web;
 
 import org.lukasz.model.BasicDateModel;
 import org.lukasz.model.db.Animal;
+import org.lukasz.model.db.Event;
 import org.lukasz.repository.AnimalRepo;
 import org.lukasz.repository.BaseRepo;
 import org.lukasz.util.DayManager;
@@ -15,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 @Controller
 public class HomeController {
@@ -37,11 +41,25 @@ public class HomeController {
         int firstDayOfMonth = DayManager.countFirstDayOfMonth(year, month);
         int numberOfDaysInMonth = DayManager.countDaysInMonth(year, month);
 
+        List<Animal> allAnimals = animalRepo.findAllAnimals();
+
+        List<Event> allEvents = getEventsToDisplay(month, allAnimals);
+
         model.addAttribute("monthToDisplay", MonthManager.createMonth(firstDayOfMonth, numberOfDaysInMonth));
-        model.addAttribute("allAnimals", animalRepo.findAllAnimals());
+        model.addAttribute("allAnimals", allAnimals);
+        model.addAttribute("allEvents", allEvents);
         //this model is used in new animal form
         model.addAttribute("newAnimal", new Animal());
         return "homepage";
+    }
+
+    private List<Event> getEventsToDisplay(int month, List<Animal> allAnimals) {
+        return allAnimals.stream()
+                .flatMap(animal -> animal.getEventList().stream())
+                .filter(event -> {
+                    int eventMonth = event.getEventDate().getMonth().getValue();
+                    return eventMonth ==  month;
+                }).collect(Collectors.toList());
     }
 
     private String redirectToToday() {

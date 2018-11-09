@@ -1,12 +1,13 @@
 package org.lukasz.model.db;
 
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Animal extends AbstractEntity {
     @NotNull
     private String name;
-    private List<AbstractEntity> eventList;
+    private List<Event> eventList = new ArrayList<>();
 
     public Animal(Long id, String name) {
         super(id);
@@ -30,11 +31,11 @@ public class Animal extends AbstractEntity {
         this.name = name;
     }
 
-    public List<AbstractEntity> getEventList() {
+    public List<Event> getEventList() {
         return eventList;
     }
 
-    public void setEventList(List<AbstractEntity> eventList) {
+    public void setEventList(List<Event> eventList) {
         this.eventList = eventList;
     }
 }
