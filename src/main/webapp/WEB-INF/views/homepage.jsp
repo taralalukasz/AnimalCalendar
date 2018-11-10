@@ -26,7 +26,9 @@
     <jsp:include page="animalPanel.jsp" />
 
     <%--animal form--%>
-    <jsp:include page="animalForm.jsp" />
+    <div class="header_element">
+        <jsp:include page="animalForm.jsp" />
+    </div>
 </div>
 
 <jsp:include page="tableCalendar.jsp" />
@@ -34,5 +36,6 @@
 
 <script src=${pageContext.request.contextPath}/resources/scripts/modal.js></script>
 <script src=${pageContext.request.contextPath}/resources/scripts/validateAnimalForm.js></script>
+<script src=${pageContext.request.contextPath}/resources/scripts/eventFormModal.js></script>
 </body>
 </html>

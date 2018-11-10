@@ -6,36 +6,40 @@ import java.time.LocalDateTime;
  * Basic event to be displayed
  */
 public class Event extends AbstractEntity {
-    private String Title;
-    private String Description;
+    private String title;
+    private String description;
     private LocalDateTime eventDate;
 
     public Event(Long id, String title, LocalDateTime eventDate) {
         super(id);
-        Title = title;
+        this.title = title;
         this.eventDate = eventDate;
     }
 
     public Event( String title, LocalDateTime eventDate) {
         super();
-        Title = title;
+        this.title = title;
         this.eventDate = eventDate;
     }
 
+    public Event() {
+        super();
+    }
+
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public LocalDateTime getEventDate() {
@@ -45,5 +49,4 @@ public class Event extends AbstractEntity {
     public void setEventDate(LocalDateTime eventDate) {
         this.eventDate = eventDate;
     }
-
 }

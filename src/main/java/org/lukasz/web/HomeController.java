@@ -50,6 +50,8 @@ public class HomeController {
         model.addAttribute("allEvents", allEvents);
         //this model is used in new animal form
         model.addAttribute("newAnimal", new Animal());
+
+        model.addAttribute("newEvent", new Event());
         return "homepage";
     }
 

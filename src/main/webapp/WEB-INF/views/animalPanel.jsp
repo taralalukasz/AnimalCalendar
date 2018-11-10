@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <div class="header_element flex_container">
     <c:forEach items="${allAnimals}" var="animal" >
@@ -8,6 +9,7 @@
             </div>
         </div>
 
-        <button class="event_form">+</button>
+        <jsp:include page="eventForm.jsp" />
+
     </c:forEach>
 </div>
