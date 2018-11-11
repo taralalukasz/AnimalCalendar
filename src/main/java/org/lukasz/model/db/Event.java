@@ -9,6 +9,7 @@ public class Event extends AbstractEntity {
     private String title;
     private String description;
     private LocalDateTime eventDate;
+    private Animal animal;
 
     public Event(Long id, String title, LocalDateTime eventDate) {
         super(id);
@@ -16,14 +17,29 @@ public class Event extends AbstractEntity {
         this.eventDate = eventDate;
     }
 
-    public Event( String title, LocalDateTime eventDate) {
+    public Event(String title, LocalDateTime eventDate) {
         super();
         this.title = title;
         this.eventDate = eventDate;
     }
 
+    public Event(String title, LocalDateTime eventDate, Animal animal) {
+        super();
+        this.title = title;
+        this.eventDate = eventDate;
+        this.animal = animal;
+    }
+
     public Event() {
         super();
+    }
+
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
     }
 
     public String getTitle() {

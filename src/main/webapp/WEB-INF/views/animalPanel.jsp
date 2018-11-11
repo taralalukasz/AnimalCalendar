@@ -8,8 +8,11 @@
                 <c:out value="${animal.name}"/>
             </div>
         </div>
+        <%--we make animal variable request scoped--%>
+        <c:set var="animal" value="${animal}" scope="request"/>
 
-        <jsp:include page="eventForm.jsp" />
+        <%--we are importing event form--%>
+        <c:import url="eventForm.jsp"/>
 
     </c:forEach>
 </div>
